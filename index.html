@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>La'Moca computadores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./animations.css">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <aside class="animate-aside-appear">
+        <div class="fixed">
+          <header>
+            <address class="animate-slow-appear">
+              <a href="https://github.com/MoisesSantana" target="_blank"><img src="./images/github.png" alt="GitHub"></a>
+              <a href="https://linkedin.com/in/moises-santana" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+            </address>
+            <h1 class="animate-slow-appear">La'Moca computadores</h1>
+          </header>
+          <footer>
+            <address class="icons">
+              <small>Icons made by <a target="_blank" href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a><br> and <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a><br> from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></small>
+            </address>
+          </footer>
+        </div>
+      </aside>
+      <section class="items"><img src="./images/loading.png" alt="carregando" class="loading animate-loading"></section>
+      <section class="cart">
+        <div class="fixed">
+          <span class="cart__title">Carrinho de compras</span>
+          <button class="empty-cart">Esvaziar carrinho</button>
+          <ol class="cart__items"></ol>
+          <p>Total: R$<span class="total-price"></span></p>
+        </div>
+      </section>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

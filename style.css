@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.loading {
+  position: fixed;
+  font-size: 50px;
+  left: 20%;
+  margin: auto;
+  top: 15%;
+  transition: 1s;
+  width: 300px;
+}
+
+aside {
+  background-color: rgb(63, 60, 60);
+  height: 100;
+  width: 200px;
+}
+
+.fixed {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+}
+
+aside .fixed {
+  height: 90vh;
+  justify-content: space-between;
+  top: 5%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-around;
+  margin: auto;
+  transform: rotate(270deg);
+}
+
+header address {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header address a img {
+  height: 32px;
+  width: 32px;
+  transition: 1s;
+}
+
+header address a img:hover {
+  transform: scale(0.8, 0.8);
+}
+
+header h1 {
+  color: yellow;
+  font-family: Syne Mono, monospace;
+  text-align: center;
+  width: 300px;
+}
+
+footer {
+  width: 200px;
+}
+
+footer .icons {
+  color: white;
+  text-align: center;
+}
+
+.items {
+  display: flex;
+  flex-basis: 55%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  background-color: red;
+  border: 2px solid blue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 5px;
+  width: 200px;
+}
+
+.item .item__sku {
+  display: none;
+}
+
+.item .item__title {
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.item .item__image {
+  width: 100%;
+}
+
+.item .item__add {
+  background-color: green;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+}
+
+.cart {
+  display: flex;
+  padding: 5px;
+  position: relative;
+  width: 300px;
+}
+
+.cart .cart__title {
+  flex-basis: 1;
+  font-size: 16pt;
+  text-align: center;
+  width: 100%;
+}
+
+.cart .cart__items {
+  height: 50%;
+  overflow-y: scroll;
+}
+
+.cart p {
+  text-align: center;
+}
