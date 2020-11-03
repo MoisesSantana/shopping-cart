@@ -28,6 +28,23 @@
   animation-duration: 0.5s;
 }
 
+
+@keyframes aside-cart-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-aside-cart-appear {
+  animation-name: aside-cart-appear;
+  animation-duration: 0.5s;
+}
+
 @keyframes slow-appear {
   from {
     opacity: 0;
@@ -39,4 +56,18 @@
 .animate-slow-appear {
   animation-name: slow-appear;
   animation-duration: 4s;
+}
+
+@keyframes fast-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fast-appear {
+  animation-name: fast-appear;
+  animation-duration: 1s;
 }
